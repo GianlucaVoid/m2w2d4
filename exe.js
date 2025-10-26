@@ -90,17 +90,11 @@ if (somma <= 100) {
     console.log  ('prezzo complessivo e spedizione', somma);
 }
 
-
 if (somma > 100){
 console.log('prezzo complessivo', somma)
 }
 
-let utenti = [];
-
-utenti.push (paul, amy, marco)
-console.log(utenti)
-
-
-for (i=0; i = utenti.length; i++){
-  console.log(utenti[i].name + ' ' + utenti[i].lastName, 'Non e un Ambassador')}
-
+const utenti = [paul, amy, marco];
+for (const u of utenti) {
+  console.log(`${u.name} ${u.lastName} - ${u.isAmbassador ? "È un Ambassador" : "Non è un Ambassador"}`);
+}
